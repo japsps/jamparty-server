@@ -8,15 +8,15 @@ class Logger {
 
     _getModuleColor(moduleName) {
         const colors = [
-            chalk.default.cyanBright,
-            chalk.default.magentaBright,
-            chalk.default.yellowBright,
-            chalk.default.blueBright,
-            chalk.default.greenBright,
-            chalk.default.redBright,
-            chalk.default.whiteBright,
-            chalk.default.gray,
-            chalk.default.blackBright
+            chalk.cyanBright,
+            chalk.magentaBright,
+            chalk.yellowBright,
+            chalk.blueBright,
+            chalk.greenBright,
+            chalk.redBright,
+            chalk.whiteBright,
+            chalk.gray,
+            chalk.blackBright
         ];
         let hash = 0;
         for (let i = 0; i < moduleName.length; i++) {
@@ -32,13 +32,13 @@ class Logger {
 
         switch (level) {
             case 'INFO':
-                return chalk.default.greenBright(formattedMessage, ...args);
+                return chalk.greenBright(formattedMessage, ...args);
             case 'WARN':
-                return chalk.default.yellowBright(formattedMessage, ...args);
+                return chalk.yellowBright(formattedMessage, ...args);
             case 'ERROR':
-                return chalk.default.redBright(formattedMessage, ...args);
+                return chalk.redBright(formattedMessage, ...args);
             case 'DEBUG':
-                return chalk.default.blueBright(formattedMessage, ...args);
+                return chalk.blueBright(formattedMessage, ...args);
             default:
                 return formattedMessage;
         }
@@ -57,7 +57,7 @@ class Logger {
     }
 
     debug(message, ...args) {
-        if (process.env.NODE_ENV === 'development') { // Only show debug logs in development
+        if (process.env.NODE_ENV === 'development') {
             console.log(this._formatMessage('DEBUG', message, ...args));
         }
     }
