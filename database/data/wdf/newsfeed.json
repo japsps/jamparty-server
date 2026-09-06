@@ -1,0 +1,38 @@
+{
+    "__class": "NewsfeedList",
+    "entries": [{
+            "activationTime": 1467358200,
+            "active": true,
+            "defaultLanguage": "en",
+            "displayDuration": 3,
+            "locId": 13602,
+            "pool": "Priority2_Stats",
+            "textLocId": 13506,
+            "themeType": "boss",
+            "type": "automatic",
+            "variables": {
+                "pictureUrl": [],
+                "text": [],
+                "title": ["boss-currentWeekMostBossesBeatenPlayer"]
+            },
+            "playerBasedEntry": true,
+            "playerInfo": {
+                "name": "Welcome",
+                "avatar": 998,
+                "country": 8490,
+                "skin": 101,
+                "platform": "pc",
+                "portraitBorder": 34,
+                "jdPoints": 461488,
+                "tournamentBadge": false,
+                "isSubscribed": false,
+                "pid": "bb805585-4178-41f5-9c71-e4d55c0ff9d9",
+                "__class": "NewsFeedPlayerInfo"
+            },
+            "pictureUrl": "https://ubistatic-a.akamaihd.net/0060/uat/newsfeed/m_1500468052.png",
+            "text": "Welcome to JDParty WDF (Beta)!",
+            "title": "Welcome",
+            "__class": "NewsfeedEntry"
+        }
+    ]
+}

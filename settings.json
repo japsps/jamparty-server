@@ -1,0 +1,32 @@
+{
+    "server": {
+        "SaveData": {
+            "windows": "{Home}\\AppData\\Roaming\\openparty\\",
+            "linux": "{Home}/.openparty/"
+        },
+        "port": 80,
+        "forcePort": false,
+        "isPublic": true,
+        "enableSSL": true,
+        "domain": "jdp.justdancenext.xyz",
+        "modName": "Just Dance Unlimited Mod",
+        "serverstatus": {
+            "isMaintenance": false,
+            "channel": "prod"
+        }
+    },
+    "modules": [
+        {
+            "name": "WDFPlugin",
+            "description": "Create a fake response for WDF so that the mod can run on older version",
+            "path": "{dirname}/core/wdf/FakeWdfPlugin.js",
+            "execution": "init"
+        },
+        {
+            "name": "HelloWorldPlugin",
+            "description": "A simple example plugin that demonstrates the plugin system",
+            "path": "{dirname}/plugins/HelloWorldPlugin.js",
+            "execution": "init"
+        }
+    ]
+}
