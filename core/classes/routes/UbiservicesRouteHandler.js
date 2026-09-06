@@ -231,7 +231,7 @@ class UbiservicesRouteHandler extends RouteHandler {
      * @param {Response} res - The response object
      */
     handleGetParametersJD22(req, res) {
-    res.send(this.replaceDomainPlaceholder(require("../../database/config/v1/parameters.json"), this.settings.server.domain));
+    res.send(this.replaceDomainPlaceholder(require("../../../database/config/v1/parameters.json"), this.settings.server.domain));
     }
 
     /**
@@ -240,7 +240,7 @@ class UbiservicesRouteHandler extends RouteHandler {
      * @param {Response} res - The response object
      */
     handleGetParametersJD18(req, res) {
-        res.send(this.replaceDomainPlaceholder(require("../../database/config/v1/parameters2.json"), this.settings.server.domain));
+        res.send(this.replaceDomainPlaceholder(require("../../../database/config/v1/parameters2.json"), this.settings.server.domain));
     }
 
     /**
